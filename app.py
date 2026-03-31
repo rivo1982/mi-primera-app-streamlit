@@ -48,4 +48,11 @@ ax.set_xlabel("Emprendimiento")
 ax.set_ylabel("Inversión (USD)")
 st.pyplot(fig)
 
+# Agregar un gráfico de líneas para mostrar la tendencia de inversión
+st.subheader("Tendencia de Inversión")
+fig2, ax2 = plt.subplots()
+ax2.plot(df["Emprendimiento"], df["Inversión (USD)"], marker='o', linestyle='-', color='orange')  
+ax2.set_xlabel("Emprendimiento")
+ax2.set_ylabel("Inversión (USD)")
+st.pyplot(fig2)
 
